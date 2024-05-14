@@ -2,7 +2,7 @@ num =1
 fizzcount=0
 buzzcount=0
 fizzbuzzcount=0
-while (num<=1000):
+while (num<=100000):
     if(num%3==0) and (num%5==0):
         print(str(num) + ":Fizzbuzz!")
         fizzbuzzcount+=1
@@ -18,4 +18,4 @@ while (num<=1000):
     num +=1
 print("________________________________")
 print("fizz\tBuzz\tFizzbuzz")
-print(str(fizzcount) + "\t" + str(buzzcount) +"\t" +str(fizzbuzzcount))
+print(str("{:,}".format(fizzcount)) + "\t" + str("{:,}".format(buzzcount)) +"\t" +str("{:,}".format(fizzbuzzcount)))
